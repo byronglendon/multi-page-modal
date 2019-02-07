@@ -1,0 +1,14 @@
+<div role="document" class="modal-dialog modal-lg">
+  <div class="modal-content">
+        <div class="modal-body pt-0 pb-0 pl-4 pr-4">
+            <h4 class="modal-title">{{model_shell_title}}</h4> <!-- From modal-xxx.component.html -->
+            <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <router-outlet name="popup">
+              <ng-content><!-- Content From xxx.component.html --></ng-content>
+            </router-outlet>
+    </div>
+  </div>
+</div>
+
